@@ -60,13 +60,14 @@ button {
     
 }
 
-button:hover {
+button:hover,
+button:focus {
     background-color: #162952;
+    outline: none; 
 }
 
 button:active {
     background-color: grey;
-    
     transform: translateY(4px);
 }
 
