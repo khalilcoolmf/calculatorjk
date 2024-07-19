@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href= "styles.css">
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+    <title>Formen und Taschen Rechner</title>
+</head>
+<body>
+    
+    <div id="resText">0</div>
+    
+    <div id="calculator">
+     
+        <table>
+            <tr>
+                <td colspan="2"><button type="button" onclick="clearDisplay()">AC</button></td>
+                <td colspan="2"><button type="button" onclick="deleteLast()">DEL</button></td>
+            </tr>
+            <tr>
+                <td><button id="n9" onclick="appendNumber('9')">    9   </button></td>
+                <td><button onclick="appendNumber('8')" >    8   </button></td>
+                <td><button onclick="appendNumber('7')" >    7   </button></td>
+                <td><button onclick="appendOperator('+')" >    +   </button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber('6')" >    6   </button></td>
+                <td><button onclick="appendNumber('5')" >    5   </button></td>
+                <td><button onclick="appendNumber('4')" >    4   </button></td>
+                <td><button onclick="appendOperator('-')"  >    -   </button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber('3')" >    3   </button></td>
+                <td><button onclick="appendNumber('2')" >    2   </button></td>
+                <td><button onclick="appendNumber('1')" >    1   </button></td>
+                <td><button onclick="appendNumber('×')"  >    ×   </button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber('0')" >    0   </button></td>
+                <td><button onclick="appendOperator('.')" >    ,   </button></td>
+                <td><button onclick="appendOperator('÷')"  >    ÷   </button></td>
+                <td><button onclick="calculateResult()">    =   </button></td>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
