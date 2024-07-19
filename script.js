@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("resText").innerHTML = "0";
 
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', () => {
+            button.blur(); // Entfernt den Fokus vom Button nach dem Klicken
+        });
+    });
 });
 function appendNumber(number) {
     let resText = document.getElementById("resText");
